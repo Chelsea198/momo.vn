@@ -15,7 +15,7 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
-  eventify: ^1.0.0
+  eventify: ^0.0.8
 
 dev_dependencies:
   flutter_test:
