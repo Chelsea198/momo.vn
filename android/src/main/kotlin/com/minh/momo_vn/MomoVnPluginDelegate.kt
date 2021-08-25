@@ -30,7 +30,7 @@ class MomoVnPluginDelegate(private var registrar: PluginRegistry.Registrar? = nu
             AppMoMoLib.getInstance().setEnvironment(AppMoMoLib.ENVIRONMENT.DEVELOPMENT)
         }
 
-        AppMoMoLib.getInstance().requestMoMoCallBack(registrar?.activity(), paymentInfo)
+        AppMoMoLib.getInstance().requestMoMoCallBack(registrar?.getFlutterView(), paymentInfo)
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?): Boolean {
